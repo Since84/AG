@@ -1,11 +1,11 @@
 /* 
- *	Theme Name: AG
+ *	Theme Name: Spark15
  *	Author:	BOOM Creative
  *	Description: Super Theme for Custom Site Development
  *	Version: 0.1
- *  Template: Spark15
  */
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,45 +27,169 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* COLORS */
+/* GRAPHIC ELEMENTS */
+/* Icons */
+/* line 1, style/section/_global.scss */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* line 3, style/section/_header.scss */
+header {
+  position: relative;
+  height: 100px;
+  background: url(style/images/navbg.png) repeat-x;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+}
+/* line 10, style/section/_header.scss */
+header .left-container {
+  display: inline-block;
+  width: 33.3%;
+  vertical-align: middle;
+}
+/* line 14, style/section/_header.scss */
+header .left-container .site-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin: auto;
+  height: 40px;
+}
+/* line 24, style/section/_header.scss */
+header nav {
+  height: 100px;
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 29, style/section/_header.scss */
+header nav li {
+  display: inline-block;
+  border-right: 1px solid #E70000;
+  height: 36px;
+  margin-top: 1px;
+  margin-right: -3px;
+  width: 100px;
+}
+/* line 37, style/section/_header.scss */
+header nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFF;
+  width: 100%;
+  height: 97px;
+  padding-top: 12px;
+}
+/* line 47, style/section/_header.scss */
+header nav a:hover {
+  background: url(style/images/nav_over.png) no-repeat no-repeat;
+}
+/* line 51, style/section/_header.scss */
+header nav .current_page_item a {
+  background: url(style/images/nav_over.png) no-repeat no-repeat;
+}
+/* line 55, style/section/_header.scss */
+header .mobile-logo {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  /* line 3, style/section/_header.scss */
+  header {
+    height: 75px;
+  }
+  /* line 60, style/section/_header.scss */
+  header .mobile-logo {
+    display: block;
+  }
+  /* line 61, style/section/_header.scss */
+  header .desktop-logo {
+    display: none;
+    width: 90px;
+    line-height: 1.5em;
+  }
+  /* line 66, style/section/_header.scss */
+  header nav {
+    display: none;
+  }
+  /* line 70, style/section/_header.scss */
+  header .mobile-btn {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(style/images/icons/menu-icon.png) center center no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    right: 3em;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+/* line 2, style/section/_sidr.scss */
+.sidr {
+  background: #302d2d;
+  color: white;
+}
+/* line 5, style/section/_sidr.scss */
+.sidr ul {
+  border: none;
+}
+/* line 7, style/section/_sidr.scss */
+.sidr ul li {
+  border-color: #222121;
+  border-width: 0 0 1px 0;
+}
+/* line 10, style/section/_sidr.scss */
+.sidr ul li a {
+  color: white;
 }

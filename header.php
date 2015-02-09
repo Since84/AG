@@ -24,8 +24,10 @@
 <body <?php body_class(); ?> >
 <?php
 
-	$headContext['logo'] = '';
+	$headContext['logo'] = get_header_image();
+	$headContext['mobile_logo'] = get_stylesheet_directory_uri().'/style/images/logos/agdinc-mobilelogo.png';
 	$headContext['nav'] = new TimberMenu('main-nav');
+
 	Timber::render('/views/content/header.html.twig', $headContext);
 
 

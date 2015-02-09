@@ -5,4 +5,12 @@
  *	Version: 0.1
  */
 
-@import "compass/reset";
+@import "compass/reset"; 
+@import "brand/brand";
+
+//Global Styles
+@import "section/global";
+
+//Header 
+@import "section/header";
+@import "section/sidr";
